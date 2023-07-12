@@ -1,13 +1,10 @@
-from typing import Set, Dict, Tuple
-
-Node = int
-NodeSet = Set[Node]
+from typing import Set, Dict
+from Network import Node, NodeSet
+from Pos import Pos
 
 CID = int
-ClusterSet = Dict[CID, Set[Node]]
+ClusterSet = Dict[CID, NodeSet]
 
-Node = int
-Pos = Tuple[float, ...]
 NodePosSet = Dict[Node, Pos]
 NodeCID = Dict[Node, CID]
 NodeNearPoints = Dict[Node, NodeSet]
