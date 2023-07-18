@@ -6,6 +6,14 @@ NodeSet = Set[Node]
 Edge = Tuple[Node, Node]
 EdgeSet = Set[Edge]
 
+def EDGE(v1, v2):
+    return ((v1 << 32) | v2) if v1 < v2 else ((v2 << 32) | v1)
+
+def V1(edge):
+    return (edge >> 32) & 0xffffffff
+
+def V2(edge):
+    return edge & 0xffffffff
 
 class Network:
     def __init__(self):

@@ -1,5 +1,5 @@
-from Network import Network, EdgeSet, NodeSet
-from type import NodePosSet, V1, V2
+from Network import Network, EdgeSet, NodeSet, V1, V2
+from type import NodePosSet
 from typing import List
 from OctTree import OctTree
 from Pos import Pos

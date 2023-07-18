@@ -10,7 +10,7 @@ class DataUtils:
     @staticmethod
     def getDataRoot(exePath: str) -> str:
         print("WARNING: \"getDataRoot\" is a now debugging function!")
-        return os.path.join(exePath[:exePath.find("BlackHoleCD")], "Datasets")
+        return os.path.join(exePath[:exePath.find("src")], "Datasets")
 
     @staticmethod
     def readNetwork(dataRoot: str, dataset: str, network: Network) -> str:
